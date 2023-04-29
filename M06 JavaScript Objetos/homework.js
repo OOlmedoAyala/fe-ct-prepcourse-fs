@@ -7,6 +7,8 @@ function crearGato(nombre, edad) {
    // La propiedad "meow" será una función que retorne el string: "Meow!".
    // Retornar el objeto.
    // Tu código:
+   var gato = {nombre:nombre,edad:edad,meow:function(){return('Meow!')}};
+   return gato;
 }
 
 function nuevoUsuario(nombre, email, password) {
@@ -14,6 +16,8 @@ function nuevoUsuario(nombre, email, password) {
    // Este debe tener las propiedades: "nombre", "email" y "password" con sus respectivos valores.
    // Retornar el objeto.
    // Tu código:
+   var usuario = {nombre:nombre,email:email,password:password};
+   return usuario;
 }
 
 function agregarPropiedad(objeto, propiedad) {
@@ -22,6 +26,9 @@ function agregarPropiedad(objeto, propiedad) {
    // Esta propiedad será igual al valor `null`.
    // Retornar el objeto.
    // Tu código:
+   var objeto = {objeto:objeto,propiedad:null};
+   var propiedad = {objeto:null,propiedad:propiedad};
+   return objeto+propiedad;
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -29,24 +36,33 @@ function invocarMetodo(objeto, metodo) {
    // Esta propiedad contiene una función en su interior. Debes invocarla/ejecutarla.
    // [NOTA]: no necesitar retornar nada.
    // Tu código:
+   
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
    // El parámetro "objetoMisterioso" posee una propiedad con el nombre "numeroMisterioso".
    // Debes multiplicar este número por 5 y retornar el resultado.
    // Tu código:
+
 }
 
 function eliminarPropiedad(objeto, propiedad) {
    // El parámetro "propiedad" es una propiedad del objeto que recibes.
    // Debes eliminarla del objeto y retornarlo finalmente.
    // Tu código:
+   var eliminar = {
+      objeto: objeto,
+      propiedad: propiedad
+   };
+   delete eliminar.propiedad;
+   return eliminar;
 }
 
 function tieneEmail(objetoUsuario) {
    // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
+   
 }
 
 function tienePropiedad(objeto, propiedad) {
