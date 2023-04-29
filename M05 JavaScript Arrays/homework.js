@@ -174,7 +174,7 @@ function mesesDelAño(array) {
       if(array[i] == 'Enero' || array[i] == 'Marzo' || array[i] == 'Noviembre'){
          array1[i] = array[i];
    }else{
-      continue;
+      
    }return array1;
    
    }
